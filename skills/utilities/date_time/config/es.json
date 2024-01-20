@@ -1,0 +1,84 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "current_date_time": {
+      "type": "logic",
+      "utterance_samples": [
+        "¿Cuál es la fecha y hora actuales?",
+        "¿Cuál es la fecha y la hora?",
+        "Dime la hora y la fecha",
+        "¿Cuál es la fecha y hora actuales?"
+      ]
+    },
+    "current_date": {
+      "type": "logic",
+      "utterance_samples": [
+        "¿Cuál es la fecha de hoy?",
+        "¿Cuál es la fecha de hoy?",
+        "¿Qué día es hoy?",
+        "¿Qué día de la semana somos?",
+        "¿Que dia de la semana es?"
+      ]
+    },
+    "current_time": {
+      "type": "logic",
+      "utterance_samples": [
+        "¿Qué hora es?",
+        "¿Tienes el tiempo?",
+        "¿Puedes decirme la hora actual?",
+        "¿Cuál es la hora ahora?"
+      ]
+    },
+    "current_week_number": {
+      "type": "logic",
+      "utterance_samples": [
+        "¿Qué semana es?",
+        "¿Qué semana del año es?",
+        "¿En qué semana estamos ahora?",
+        "¿Cuál es el número de esta semana?",
+        "¿Qué semana del año estamos?",
+        "¿Cuál es el número de la semana actual?"
+      ]
+    },
+    "days_countdown": {
+      "type": "logic",
+      "utterance_samples": [
+        "¿Cuántos días faltan para @date?",
+        "¿Cuál es el número de días que quedan hasta la @date?",
+        "¿En cuántos días será @date?",
+        "Calcule el número hasta @date"
+      ]
+    },
+    "current_date_time_with_time_zone": {
+      "type": "logic",
+      "utterance_samples": [
+        "¿Cuál es la hora en @location:city??",
+        "¿Qué hora es en @location:city??",
+        "¿Puedes decirme la hora actual en @location:city??",
+        "¿Qué hora es ahora en @location:city??",
+        "¿Cuál es la fecha y hora actuales en @location:city??",
+        "¿Qué pasa con @location:city??",
+        "¿Qué tal @location:city??",
+        "¿Y en @location:city??"
+      ]
+    }
+  },
+  "answers": {
+    "current_date_time": [
+      "Es %día de la semana%, %mes% %día%, %año% y son %horas%:%minutos%:%segundos%."
+    ],
+    "current_date_time_with_time_zone": [
+      "¡Saludos desde %ciudad%, %país%! La fecha y hora locales son %semana%, %mes% %día%, %año%, y son %horas%:%minutos%:%segundos%."
+    ],
+    "current_date": ["Es %weekday%, %month% %day%, %year%."],
+    "current_time": ["Son las %hours%:%minutes%:%seconds%."],
+    "current_week_number": ["Es la semana %week_number% del año."],
+    "days_countdown": [
+      "Hay %days% dias entre %month1% %day1%, %year1% y %month2% %day2%, %year2%."
+    ],
+    "days_countdown_error": ["Lo siento, no entendí la fecha que dijiste."],
+    "city_not_found": [
+      "Lo siento, no pude encontrar la ciudad que dijiste. Inténtalo de nuevo."
+    ]
+  }
+}

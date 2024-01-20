@@ -1,0 +1,65 @@
+{
+  "$schema": "../../../schemas/global-data/global-answers.json",
+  "answers": {
+    "success": {},
+    "errors": {
+      "not_found": "Parece que no puedo encontrar eso"
+    },
+    "synchronizer": {
+      "syncing_direct": "Ahora sincronizaré el contenido descargado en su dispositivo actual. No se preocupe, le avisaré cuando termine",
+      "synced_direct": "El nuevo contenido se ha sincronizado en su dispositivo",
+      "syncing_google_drive": "Ahora sincronizaré el contenido descargado en Google Drive. No se preocupe, le avisaré cuando termine",
+      "synced_google_drive": "El nuevo contenido ya está disponible en Google Drive"
+    },
+    "random_errors": [
+      "Lo siento, hay un problema con mi sistema. Por favor, revise mis registros para obtener más detalles",
+      "Lo siento, no funciona correctamente. Por favor, consulte mis registros para obtener más información",
+      "Lo siento, necesita repararme. Por favor, consulte mis registros para obtener más información",
+      "Lo siento, no puedo hacer eso porque estoy roto. Por favor, revise mis registros para obtener más detalles"
+    ],
+    "random_skill_errors": [
+      "Lo siento, parece que tengo un problema con la habilidad \"%skill_name%\" del dominio \"%domain_name%\"",
+      "Lo siento, tengo un problema con la habilidad \"%skill_name%\" del dominio \"%domain_name%\"",
+      "Lo siento, he encontrado un error con la habilidad \"%skill_name%\" del dominio \"%domain_name%\"",
+      "Lo siento, la habilidad \"%skill_name%\" del dominio \"%domain_name%\" está rota"
+    ],
+    "random_unknown_intents": [
+      "Lo siento, aún no sé esto, pero puedes ayudarme a entenderlo creando una solicitud de extracción.",
+      "Lo siento, debería enseñarme esta solicitud. Puedes enseñarme creando una solicitud de extracción.",
+      "Lo siento, no puedo responder a eso. Déjame responderte en el futuro creando una solicitud de extracción.",
+      "Lo siento, tienes que educarme más. Puedes ayudarme con eso contribuyendo con mi código.",
+      "Lo siento, no entiendo su consulta",
+      "Lo siento, todavía soy muy joven, no entendí su punto"
+    ],
+    "random_not_sure": [
+      "Lo siento, puedes repetir de otra manera",
+      "Lo siento, no estoy seguro de haber entendido correctamente",
+      "Lo siento, no estoy seguro de lo que preguntó, por favor repita de manera diferente",
+      "Lo siento, por favor, repita nuevamente formulándolo de manera diferente",
+      "Lo siento, hoy no limpie bien mis oídos. ¡Oh, espera, soy tu asistente personal, entonces intenta nuevamente de una manera nueva!"
+    ],
+    "random_not_able": [
+      "Lo siento, no puedo responder. Entiendo lo que dijo, pero por favor repita de otra manera",
+      "Lo siento, tengo un apagón, no puedo responder eso. Entiendo lo que dijo, pero trate de repetirlo de otra manera"
+    ],
+    "random_ner_type_not_supported": [
+      "Lo siento, el tipo de entidad de acción \"%entity_type%\" no es compatible con mi NER. Por favor, envíe un problema al repositorio de GitHub para informar sobre este error.",
+      "Lo siento, mi NER no reconoce el tipo de entidad de acción \"%entity_type%\". Por favor, envíe un problema al repositorio de GitHub para informar sobre este error. Lo apreciaría mucho."
+    ],
+    "random_language_switch": [
+      "Oye, parece que es un nuevo idioma, dame un segundo para hacer el cambio",
+      "Estás hablando en otro idioma, déjame hacer el cambio, por favor",
+      "Guau, puedes hablar varios idiomas, yo también! Un momento por favor"
+    ],
+    "random_language_not_supported": [
+      "Lo siento, aún no hablo este idioma",
+      "Eres genial, pero no puedo hablar este idioma todavía",
+      "Parece que es un idioma que no puedo entender en este momento"
+    ],
+    "random_context_out_of_topic": [
+      "Claro, cambiemos de tema",
+      "Ah, ¿quieres cambiar de tema? Claro",
+      "Mmmh, como desees, cambiemos de conversación"
+    ]
+  }
+}

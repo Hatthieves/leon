@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "dialog",
+      "utterance_samples": [
+        "Cuéntame un chiste",
+        "Cuéntame un chiste",
+        "Hazme reir",
+        "¿Tienes chistes que contarme?",
+        "Quiero reír"
+      ],
+      "answers": [
+        "Mi contraseña de correo electrónico ha sido pirateada. Es la tercera vez que tengo que cambiar el nombre del gato.",
+        "¿Cómo llama una computadora bebé a su padre? Datos.",
+        "Mi resolución de Año Nuevo es 4K.",
+        "Cualquier habitación es una habitación de pánico si pierdes tu teléfono en ella.",
+        "¿Por qué estaba triste el desarrollador de JavaScript? Porque no sabía cómo expresarse.",
+        "¿Por qué el desarrollador quebró? Porque agotó todo su caché.",
+        "Hay 10 tipos de personas en el mundo: las que entienden el binario y las que no.",
+        "Instagram es sólo Twitter para la gente que sale.",
+        "Humano: ¡¿Qué queremos?! Computadora: ¡Procesamiento del lenguaje natural! Humano: ¡¿Cuándo lo queremos?! Computadora: ¿Cuándo queremos qué?",
+        "¿Tu nombre es Wi-Fi? Porque siento una conexión.",
+        "Puse 'tuchurra' como contraseña, pero me dijo que era muy corta"
+      ]
+    }
+  }
+}

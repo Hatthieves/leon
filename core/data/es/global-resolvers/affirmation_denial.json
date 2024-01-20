@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../../schemas/global-data/global-resolver.json",
+  "name": "affirmation_denial",
+  "intents": {
+    "affirmation": {
+      "utterance_samples": [
+        "Sí",
+        "¡No ni na!",
+        "Haz [eso|esto|aquello]",
+        "Seguro",
+        "Seguro que sí",
+        "¡Claro!",
+        "Vale",
+        "OK",
+        "Bueno",
+        "Correcto",
+        "En efecto",
+        "De acuerdo",
+        "Perfecto",
+        "Eso es correcto",
+        "Eso funciona",
+        "Adelante",
+        "¿Por qué no?",
+        "Por favor",
+        "Absolutamente",
+        "Precisamente",
+        "En el clavo",
+        "Sin duda alguna",
+        "Ciertamente",
+        "Sin lugar a dudas",
+        "Definitivamente"
+      ],
+      "value": true
+    },
+    "denial": {
+      "utterance_samples": [
+        "No",
+        "No no no",
+        "¡Para!",
+        "No gracias",
+        "No estoy interesado",
+        "¡Diablos, no!",
+        "Por favor, no",
+        "No estoy de acuerdo",
+        "Negativo",
+        "Para nada"
+      ],
+      "value": false
+    }
+  }
+}

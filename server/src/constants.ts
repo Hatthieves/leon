@@ -91,6 +91,8 @@ export const EN_SPACY_MODEL_NAME = 'en_core_web_trf'
 export const EN_SPACY_MODEL_VERSION = '3.4.0'
 export const FR_SPACY_MODEL_NAME = 'fr_core_news_md'
 export const FR_SPACY_MODEL_VERSION = '3.4.0'
+export const ES_SPACY_MODEL_NAME = 'es_core_news_md'
+export const ES_SPACY_MODEL_VERSION = '3.4.0'
 
 /**
  * Environments

@@ -23,6 +23,15 @@ spacy_model_mapping = {
             'LOC': 'location',
             'ORG': 'organization'
         }
+    },
+    'es': {
+        'model': 'es_core_news_md',
+        'exclude': ['tok2vec', 'morphologizer', 'parser', 'senter', 'attribute_ruler', 'lemmatizer'],
+        'entity_mapping': {
+            'PER': 'person',
+            'LOC': 'location',
+            'ORG': 'organization'
+        }
     }
 }
 

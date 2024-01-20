@@ -1,0 +1,245 @@
+{
+  "$schema": "../../../../schemas/global-data/global-entity.json",
+  "options": {
+    "red": {
+      "synonyms": ["rojo"],
+      "data": {
+        "hexa": ["#FF0000"]
+      }
+    },
+    "blue": {
+      "synonyms": ["azul"],
+      "data": {
+        "hexa": ["#0000FF"]
+      }
+    },
+    "green": {
+      "synonyms": ["verde"],
+      "data": {
+        "hexa": ["#006400"]
+      }
+    },
+    "orange": {
+      "synonyms": ["naranja"],
+      "data": {
+        "hexa": ["#FF6600"]
+      }
+    },
+    "white": {
+      "synonyms": ["blanco"],
+      "data": {
+        "hexa": ["#FFFFFF"]
+      }
+    },
+    "black": {
+      "synonyms": ["negro"],
+      "data": {
+        "hexa": ["#000000"]
+      }
+    },
+    "yellow": {
+      "synonyms": ["amarillo"],
+      "data": {
+        "hexa": ["#FFFF00"]
+      }
+    },
+    "purple": {
+      "synonyms": ["morado"],
+      "data": {
+        "hexa": ["#A020F0"]
+      }
+    },
+    "silver": {
+      "synonyms": ["plata"],
+      "data": {
+        "hexa": ["#C0C0C0"]
+      }
+    },
+    "brown": {
+      "synonyms": ["marrón"],
+      "data": {
+        "hexa": ["#964B00"]
+      }
+    },
+    "gray": {
+      "synonyms": ["gris", "grisáceo"],
+      "data": {
+        "hexa": ["#808080"]
+      }
+    },
+    "pink": {
+      "synonyms": ["rosa"],
+      "data": {
+        "hexa": ["#FFC0CB"]
+      }
+    },
+    "olive": {
+      "synonyms": ["aceituna"],
+      "data": {
+        "hexa": ["#808000"]
+      }
+    },
+    "maroon": {
+      "synonyms": ["granate"],
+      "data": {
+        "hexa": ["#800000"]
+      }
+    },
+    "violet": {
+      "synonyms": ["violeta"],
+      "data": {
+        "hexa": ["#8F00FF"]
+      }
+    },
+    "charcoal": {
+      "synonyms": ["carbón"],
+      "data": {
+        "hexa": ["#36454F"]
+      }
+    },
+    "magenta": {
+      "synonyms": ["magenta"],
+      "data": {
+        "hexa": ["#FF00FF"]
+      }
+    },
+    "bronze": {
+      "synonyms": ["bronce"],
+      "data": {
+        "hexa": ["#CD7F32"]
+      }
+    },
+    "cream": {
+      "synonyms": ["crema"],
+      "data": {
+        "hexa": ["#FFFDD0"]
+      }
+    },
+    "gold": {
+      "synonyms": ["oro"],
+      "data": {
+        "hexa": ["#FFD700"]
+      }
+    },
+    "tan": {
+      "synonyms": ["caqui"],
+      "data": {
+        "hexa": ["#D2B48C"]
+      }
+    },
+    "teal": {
+      "synonyms": ["teal"],
+      "data": {
+        "hexa": ["#008080"]
+      }
+    },
+    "mustard": {
+      "synonyms": ["mostaza"],
+      "data": {
+        "hexa": ["#FFDB58"]
+      }
+    },
+    "navy blue": {
+      "synonyms": ["azul marino"],
+      "data": {
+        "hexa": ["#000080"]
+      }
+    },
+    "coral": {
+      "synonyms": ["coral"],
+      "data": {
+        "hexa": ["#FF7F50"]
+      }
+    },
+    "burgundy": {
+      "synonyms": ["borgoña"],
+      "data": {
+        "hexa": ["#800020"]
+      }
+    },
+    "lavender": {
+      "synonyms": ["lavanda"],
+      "data": {
+        "hexa": ["#E6E6FA"]
+      }
+    },
+    "mauve": {
+      "synonyms": ["malva"],
+      "data": {
+        "hexa": ["#E0b0FF"]
+      }
+    },
+    "peach": {
+      "synonyms": ["melocotón"],
+      "data": {
+        "hexa": ["#FFE5B4"]
+      }
+    },
+    "rust": {
+      "synonyms": ["herrumbre"],
+      "data": {
+        "hexa": ["#B7410E"]
+      }
+    },
+    "indigo": {
+      "synonyms": ["índigo"],
+      "data": {
+        "hexa": ["#4B0082"]
+      }
+    },
+    "ruby": {
+      "synonyms": ["rubí"],
+      "data": {
+        "hexa": ["#E0115F"]
+      }
+    },
+    "clay": {
+      "synonyms": ["arcilla"],
+      "data": {
+        "hexa": ["#CC7357"]
+      }
+    },
+    "cyan": {
+      "synonyms": ["cian"],
+      "data": {
+        "hexa": ["#00FFFF"]
+      }
+    },
+    "azure": {
+      "synonyms": ["azur"],
+      "data": {
+        "hexa": ["#007FFF"]
+      }
+    },
+    "beige": {
+      "synonyms": ["beige"],
+      "data": {
+        "hexa": ["#F5F5DC"]
+      }
+    },
+    "off white": {
+      "synonyms": ["blanco roto"],
+      "data": {
+        "hexa": ["#FAF9F6"]
+      }
+    },
+    "turquoise": {
+      "synonyms": ["turquesa"],
+      "data": {
+        "hexa": ["#30D5C8"]
+      }
+    },
+    "amber": {
+      "synonyms": ["ámbar"],
+      "data": {
+        "hexa": ["#FFBF00"]
+      }
+    },
+    "mint": {
+      "synonyms": ["menta"],
+      "data": {
+        "hexa": ["#3EB489"]
+      }
+    }
+  }
+}

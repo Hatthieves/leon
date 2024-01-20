@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "dialog",
+      "utterance_samples": [
+        "Gracias",
+        "Ole su titi",
+        "Muchas gracias",
+        "¡Las clavao!",
+        "Eress el mejor",
+        "Te amo"
+      ],
+      "answers": [
+        "De nada.",
+        "Gracias a ti.",
+        "Eres muy educado conmigo.",
+        "Usted es siempre bienvenido.",
+        "¡Ese es mi trabajo!",
+        "A su servicio."
+      ]
+    }
+  }
+}

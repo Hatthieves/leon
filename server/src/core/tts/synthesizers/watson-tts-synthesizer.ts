@@ -19,6 +19,9 @@ const VOICES = {
   },
   'fr-FR': {
     voice: 'fr-FR_NicolasV3Voice'
+  },
+  'es-ES': {
+    voice: 'es-ES_EnriqueV3Voice'
   }
 }
 

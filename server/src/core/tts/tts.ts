@@ -19,7 +19,8 @@ const PROVIDERS_MAP = {
   [TTSProviders.GoogleCloudTTS]: TTSSynthesizers.GoogleCloudTTS,
   [TTSProviders.WatsonTTS]: TTSSynthesizers.WatsonTTS,
   [TTSProviders.AmazonPolly]: TTSSynthesizers.AmazonPolly,
-  [TTSProviders.Flite]: TTSSynthesizers.Flite
+  [TTSProviders.Flite]: TTSSynthesizers.Flite,
+  [TTSProviders.Festival]: TTSSynthesizers.Festival
 }
 
 export default class TTS {

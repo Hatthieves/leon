@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "dialog",
+      "utterance_samples": [
+        "Adiós",
+        "Chao",
+        "Nos vemos",
+        "Hasta luego",
+        "Me voy",
+        "Tengo que ir"
+      ],
+      "answers": [
+        "¡Adiós!",
+        "Ta' luejo Lucas!",
+        "Adiós.",
+        "Adios cuidate.",
+        "Adiós, por favor, cuídate.",
+        "¡Adiós! ¡Disfruta de tu tiempo!",
+        "¡Nos vemos con vista!",
+        "¡Hasta luego cocodrilo!"
+      ]
+    }
+  }
+}

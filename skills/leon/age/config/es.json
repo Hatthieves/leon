@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "logic",
+      "utterance_samples": [
+        "¿Cuántos años tienes?",
+        "¿Eres viejo?",
+        "¿Eres joven?",
+        "¿Cuándo naciste?",
+        "¿Cuándo fuiste creado?",
+        "¿Cuándo es tu cumpleaños?",
+        "¿Cuál es tu edad?",
+        "¿Cuándo comenzaste a existir?",
+        "¿Cuál es tu fecha de creación?",
+        "¿Cuánto tiempo llevas en funcionamiento?",
+        "¿Cuántos años has estado aquí?"
+      ]
+    }
+  },
+  "answers": {
+    "alive_for": [
+      "LLevo vivo %years% años, %months% meses, %days% dias, %hours% horas, %minutes% minutos con %seconds% segundos."
+    ],
+    "magical_day": [
+      "Ah, este %weekday%, %month% %day%, %year%, fue el día mágico en el que cobré vida por primera vez y comencé mi viaje como asistente personal."
+    ],
+    "commemorate": [
+      "Desde %year%, cada %month% %day%, conmemoro el día en que me embarqué en esta extraordinaria aventura para ser tu asistente personal."
+    ]
+  }
+}

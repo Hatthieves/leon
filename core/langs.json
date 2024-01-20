@@ -16,6 +16,18 @@
           "action": "run"
         }
       ]
+    },
+    "es-ES": {
+      "short": "es",
+      "min_confidence": 0.5,
+      "fallbacks": [
+        {
+          "words": ["gracias"],
+          "domain": "leon",
+          "skill": "welcome",
+          "action": "run"
+        }
+      ]
     }
   }
 }

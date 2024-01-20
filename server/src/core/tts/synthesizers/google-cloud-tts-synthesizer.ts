@@ -26,6 +26,11 @@ const VOICES = {
     languageCode: 'fr-FR',
     name: 'fr-FR-Wavenet-B',
     ssmlGender: SsmlVoiceGender.MALE
+  },
+  'es-ES': {
+    languageCode: 'es-ES',
+    name: 'es-ES-Wavenet-B',
+    ssmlGender: SsmlVoiceGender.MALE
   }
 }
 

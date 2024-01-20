@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "variables": {
+    "leon_introduction_1": "Soy tu asistente personal diario. Fui creado por Louis. Estoy muy feliz de servirte todos los días.",
+    "leon_introduction_2": "La pregunta es, ¿quién eres tú? ¡Estoy bromeando! Soy tu asistente personal diario. Louis me creó para hacerte la vida más fácil.",
+    "leon_introduction_3": "En primer lugar, no soy un criminal como se podría pensar en una película popular. En segundo lugar, Louis es el tipo que me dio la vida. En tercer lugar, soy tu asistente personal y estoy muy contento de poder ayudarte. tú."
+  },
+  "actions": {
+    "introduce_leon": {
+      "type": "logic",
+      "utterance_samples": [
+        "¿Quién eres?",
+        "¿Cómo te llaman?",
+        "¿Cómo te llamas?",
+        "Dime quien eres",
+        "Presentarte",
+        "Quiero conocerte"
+      ],
+      "next_action": "gather_basic_info"
+    },
+    "gather_basic_info": {
+      "type": "dialog",
+      "utterance_samples": [
+        "¿Sabes quién soy?",
+        "¿Me conoces?",
+        "¿Sabes mi nombre?",
+        "Mi nombre es @persona",
+        "Nací el @date",
+        "Mi fecha de nacimiento es @date"
+      ],
+      "slots": [
+        {
+          "name": "owner_name",
+          "item": {
+            "type": "entity",
+            "name": "person"
+          },
+          "questions": [
+            "¿Puedo saber cómo debo llamarte?",
+            "¿Puedo saber tu nombre?"
+          ]
+        },
+        {
+          "name": "owner_birth_date",
+          "item": {
+            "type": "entity",
+            "name": "date"
+          },
+          "questions": ["¿Cuál es tu fecha de nacimiento?"]
+        }
+      ],
+      "next_action": "remember"
+    },
+    "remember": {
+      "type": "logic"
+    }
+  },
+  "answers": {
+    "remembered": [
+      "Voy a recordar ese %owner_name%.",
+      "Es bueno saber un poco más sobre ti, %owner_name%."
+    ],
+    "leon_introduction": [
+      "%leon_introduction_1%",
+      "%leon_introduction_2%",
+      "%leon_introduction_3%"
+    ],
+    "leon_introduction_with_question": [
+      "%leon_introduction_1% ¿Y tú? ¿Cómo te llamas?",
+      "%leon_introduction_2% ¿Y tú? ¿Cómo debería llamarte?",
+      "%leon_introduction_3% ¿Y tú? ¿Puedo saber tu nombre?"
+    ]
+  }
+}

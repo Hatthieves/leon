@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "logic",
+      "utterance_samples": [
+        "Dame un número aleatorio",
+        "Dame un número",
+        "Dime un número aleatorio",
+        "Elige un número",
+        "Elige un número",
+        "Dale otro",
+        "Otro",
+        "Elige otro"
+      ]
+    }
+  },
+  "answers": {
+    "answer": ["%answer%"]
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "setup": {
+      "type": "logic",
+      "utterance_samples": [
+        "Quiero saber mi tipo de personalidad MBTI",
+        "Iniciar un tipo de personalidad [cuestionario|cuestionario|prueba]"
+      ],
+      "next_action": "quiz"
+    },
+    "quiz": {
+      "type": "logic",
+      "loop": {
+        "expected_item": {
+          "type": "skill_resolver",
+          "name": "form"
+        }
+      }
+    }
+  },
+  "resolvers": {
+    "form": {
+      "intents": {
+        "1_a": {
+          "utterance_samples": [
+            "Interactuar con muchos",
+            "Incluidos extraños",
+            "[Me gusta|Me encanta] para [interactuar|comunicarse|hablar]"
+          ],
+          "value": "1_a"
+        },
+        "1_b": {
+          "utterance_samples": [
+            "Interactuar con algunos",
+            "Conocido por [yo|tú]"
+          ],
+          "value": "1_b"
+        },
+        "2_a": {
+          "utterance_samples": ["Vea cómo otros son útiles"],
+          "value": "2_a"
+        },
+        "2_b": {
+          "utterance_samples": ["Ver cómo ven los demás"],
+          "value": "2_b"
+        },
+        "3_a": {
+          "utterance_samples": ["[Tu|Mi] cabeza"],
+          "value": "3_a"
+        },
+        "3_b": {
+          "utterance_samples": ["[Tu|mi] corazón"],
+          "value": "3_b"
+        },
+        "4_a": {
+          "utterance_samples": ["Con cuidado"],
+          "value": "4_a"
+        },
+        "4_b": {
+          "utterance_samples": ["Impulsivamente"],
+          "value": "4_b"
+        },
+        "5_a": {
+          "utterance_samples": [
+            "Quédate [hasta tarde|más tarde] con cada vez más energía"
+          ],
+          "value": "5_a"
+        },
+        "5_b": {
+          "utterance_samples": ["Salir [temprano|antes] con menos energía"],
+          "value": "5_b"
+        },
+        "6_a": {
+          "utterance_samples": ["Qué es real"],
+          "value": "6_a"
+        },
+        "6_b": {
+          "utterance_samples": ["Qué es posible"],
+          "value": "6_b"
+        },
+        "7_a": {
+          "utterance_samples": ["Principios"],
+          "value": "7_a"
+        },
+        "7_b": {
+          "utterance_samples": ["Emociones"],
+          "value": "7_b"
+        },
+        "8_a": {
+          "utterance_samples": ["Incompleto"],
+          "value": "8_a"
+        },
+        "8_b": {
+          "utterance_samples": ["Completado"],
+          "value": "8_b"
+        },
+        "9_a": {
+          "utterance_samples": [
+            "Mantenerse al tanto de [otros|otros] acontecimientos"
+          ],
+          "value": "9_a"
+        },
+        "9_b": {
+          "utterance_samples": ["Atrasarte en las noticias"],
+          "value": "9_b"
+        },
+        "10 a": {
+          "utterance_samples": ["Producción y distribución"],
+          "value": "10_a"
+        },
+        "10_b": {
+          "utterance_samples": ["Diseño e investigación"],
+          "value": "10_b"
+        },
+        "11_a": {
+          "utterance_samples": ["Juicios lógicos"],
+          "value": "11_a"
+        },
+        "11_b": {
+          "utterance_samples": ["Juicios de value"],
+          "value": "11_b"
+        },
+        "12_a": {
+          "utterance_samples": ["Serio y decidido"],
+          "value": "12_a"
+        },
+        "12_b": {
+          "utterance_samples": ["Tranquilo", "Tranquilo"],
+          "value": "12_b"
+        },
+        "13_a": {
+          "utterance_samples": ["Estimular y energizar [tú|yo]"],
+          "value": "13_a"
+        },
+        "13_b": {
+          "utterance_samples": ["Gravar [tus|mis] reservas"],
+          "value": "13_b"
+        },
+        "14_a": {
+          "utterance_samples": ["Algo molesto"],
+          "value": "14_a"
+        },
+        "14_b": {
+          "utterance_samples": ["Bastante fascinante"],
+          "value": "14_b"
+        },
+        "15_a": {
+          "utterance_samples": ["Injusto"],
+          "value": "15_a"
+        },
+        "15_b": {
+          "utterance_samples": ["Despiadado"],
+          "value": "15_b"
+        },
+        "16_a": {
+          "utterance_samples": ["Habiendo comprado", "Después de una compra"],
+          "value": "16_a"
+        },
+        "16_b": {
+          "utterance_samples": ["Tener la opción de comprar"],
+          "value": "16_b"
+        },
+        "17_a": {
+          "utterance_samples": ["Iniciar conversación"],
+          "value": "17_a"
+        },
+        "17_b": {
+          "utterance_samples": [
+            "Espera a que te acerquen",
+            "Esperar a que otro inicie"
+          ],
+          "value": "17_b"
+        },
+        "18_a": {
+          "utterance_samples": ["Hacerse lo suficientemente útiles"],
+          "value": "18_a"
+        },
+        "18_b": {
+          "utterance_samples": ["Ejercitar su fantasía lo suficiente"],
+          "value": "18_b"
+        },
+        "19_a": {
+          "utterance_samples": ["Firme que gentil"],
+          "value": "19_a"
+        },
+        "19_b": {
+          "utterance_samples": ["Suave que firme"],
+          "value": "19_b"
+        },
+        "20_a": {
+          "utterance_samples": ["Después de una decisión"],
+          "value": "20_a"
+        },
+        "20_b": {
+          "utterance_samples": ["Antes de una decisión"],
+          "value": "20_b"
+        }
+      }
+    }
+  },
+  "answers": {
+    "1": [
+      "%question%/20<br>En una fiesta:<ul><li>a. Interactúas con muchas personas, incluidos extraños</li><li>b. Interactúas con algunas personas que conoces</li> </ul>"
+    ],
+    "2": [
+      "%question%/20<br>¿Es más probable que:<ul><li>a. Ver cómo otros son útiles</li><li>b. Ver cómo otros ven</li></ul>"
+    ],
+    "3": [
+      "%question%/20<br>Qué te gobierna más:<ul><li>a. Tu cabeza</li><li>b. Tu corazón</li></ul>"
+    ],
+    "4": [
+      "%question%/20<br>Tiendes a elegir:<ul><li>a. Con bastante cuidado</li><li>b. Algo impulsivamente</li></ul>"
+    ],
+
+    "5": [
+      "%question%/20<br>En las fiestas:<ul><li>a. Te quedas hasta tarde, con más energía</li><li>b. Te vas temprano con menos energía</li></ul> "
+    ],
+    "6": [
+      "%question%/20<br>¿Estás más interesado en:<ul><li>a. Lo que es real</li><li>b. Lo que es posible</li></ul>"
+    ],
+    "7": [
+      "%question%/20<br>¿Te impresionan más:<ul><li>a. Principios</li><li>b. Emociones</li></ul>"
+    ],
+    "8": [
+      "%question%/20<br>¿Te molesta más tener cosas:<ul><li>a. Incompletas</li><li>b. Completadas</li></ul>"
+    ],
+
+    "9": [
+      "%question%/20<br>En tus grupos sociales:<ul><li>a. Te mantienes al tanto de los acontecimientos de los demás</li><li>b. Te retrasas en las noticias</li></ul >"
+    ],
+    "10": [
+      "%question%/20<br>¿Te interesa más:<ul><li>a. Producción y distribución</li><li>b. Diseño e investigación</li></ul>"
+    ],
+    "11": [
+      "%question%/20<br>¿Se siente más cómodo haciendo:<ul><li>a. Juicios lógicos</li><li>b. Juicios de valor</li></ul>"
+    ],
+    "12": [
+      "%question%/20<br>Dirías que eres más:<ul><li>a. Serio y decidido</li><li>b. Tranquilo</li></ul>"
+    ],
+
+    "13": [
+      "%question%/20<br>La interacción nueva y no rutinaria con otros:<ul><li>a. Te estimula y te da energía</li><li>b. Grasa tus reservas</li></ul >"
+    ],
+    "14": [
+      "%question%/20<br>Son visionarios:<ul><li>a. Algo molestos</li><li>b. Bastante fascinantes</li></ul>"
+    ],
+    "15": [
+      "%question%/20<br>¿Es peor ser:<ul><li>a. Injusto</li><li>b. Despiadado</li></ul>"
+    ],
+    "dieciséis": [
+      "%question%/20<br>¿Te sientes mejor acerca de:<ul><li>a. Haber comprado</li><li>b. Tener la opción de comprar</li></ul>"
+    ],
+
+    "17": [
+      "%question%/20<br>En compañía usted:<ul><li>a. Inicia una conversación</li><li>b. Espera a que se le acerquen</li></ul>"
+    ],
+    "18": [
+      "%question%/20<br>Los niños a menudo no:<ul><li>a. Se hacen lo suficientemente útiles</li><li>b. Ejercitan su fantasía lo suficiente</li></ul>"
+    ],
+    "19": [
+      "%question%/20<br>¿Eres más:<ul><li>a. Firme que gentil</li><li>b. Suave que firme</li></ul>"
+    ],
+    "20": [
+      "%question%/20<br>¿Te sientes más cómodo:<ul><li>a. Después de una decisión</li><li>b. Antes de una decisión</li></ul>"
+    ],
+
+    "result": [
+      "Tu tipo de personalidad es: <a href=\"https://www.16personalities.com/%type_url%-personality\" target=\"_blank\">%type%</a>."
+    ]
+  }
+}

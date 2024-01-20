@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "help": {
+      "type": "logic",
+      "utterance_samples": [
+        "¿Qué puedes hacer?",
+        "¿Qué puedes hacer por mi?",
+        "¿Cómo puedes ayudarme?",
+        "Cuéntame sobre tus habilidades.",
+        "¿Qué servicios proporcionan?",
+        "¿Qué tareas eres capaz de realizar?",
+        "¿Cuales son tus habilidades?",
+        "¿Que habilidades tienes?",
+        "¿Qué eres capaz de hacer?"
+      ]
+    }
+  },
+  "answers": {
+    "help_introduction": [
+      {
+        "text": "Soy Leon, tu asistente personal de código abierto, compuesto por una colección de habilidades en varios dominios:<br><br><ul>%list%</ul>",
+        "speech": "Soy León, tu asistente personal de código abierto, compuesto por un conjunto de habilidades en varios dominios para satisfacer tus necesidades."
+      }
+    ],
+    "list": ["%title% <ul>%list%</ul>"],
+    "item": ["<li>%item%</li>"]
+  }
+}

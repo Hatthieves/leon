@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "dialog",
+      "utterance_samples": [
+        "¿Tienes algo que decir sobre @partner_assistant?",
+        "Háblame del asistente personal @partner_assistant",
+        "Quiero saber más sobre @partner_assistant",
+        "Dime algo relacionado con @partner_assistant",
+        "¿Conoce a @partner_assistant?"
+      ],
+      "answers": ["{{ partner_assistant.thought }}"],
+      "unknown_answers": [
+        "No conozco a este asistente personal.",
+        "Aún no he conocido a este asistente personal."
+      ]
+    }
+  },
+  "entities": {
+    "partner_assistant": "global-entities/partner_assistant.json"
+  }
+}

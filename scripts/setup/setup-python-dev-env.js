@@ -9,6 +9,8 @@ import {
   FR_SPACY_MODEL_NAME,
   FR_SPACY_MODEL_VERSION,
   PYTHON_BRIDGE_SRC_PATH,
+  ES_SPACY_MODEL_NAME,
+  ES_SPACY_MODEL_VERSION,
   TCP_SERVER_SRC_PATH
 } from '@/constants'
 import { CPUArchitectures, OSTypes } from '@/types'
@@ -65,6 +67,10 @@ SPACY_MODELS.set('en', {
 SPACY_MODELS.set('fr', {
   name: FR_SPACY_MODEL_NAME,
   version: FR_SPACY_MODEL_VERSION
+})
+SPACY_MODELS.set('es', {
+  name: ES_SPACY_MODEL_NAME,
+  version: ES_SPACY_MODEL_VERSION
 })
 ;(async () => {
   LoaderHelper.start()

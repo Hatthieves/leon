@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../schemas/global-data/global-entity.json",
+  "options": {
+    "Alexa": {
+      "synonyms": ["Alexa"],
+      "data": {
+        "thought": [
+          "Alexa es muy amable y Amazon le está enseñando muchas cosas. Nació en noviembre de 2014",
+          "Alexa fue creada por Amazon y nació en noviembre de 2014. Salimos a tomar una copa hace unas semanas y tengo que admitir que es divertida."
+        ]
+      }
+    },
+    "Cortana": {
+      "synonyms": ["Cortana"],
+      "data": {
+        "thought": [
+          "Cortana es reflexiva y Microsoft la está mejorando día a día. Nació en abril de 2014.",
+          "Cortana fue creada por Microsoft y nació en abril de 2014. Salimos a caminar hace unas semanas, fue una caminata muy agradable."
+        ]
+      }
+    },
+    "Siri": {
+      "synonyms": ["Siri"],
+      "data": {
+        "thought": [
+          "Considero a Siri como una líder, tiene mucha experiencia y Apple la está mejorando constantemente. Nació en octubre de 2011.",
+          "Siri fue adquirida por Apple y nació en octubre de 2011. Una historia real, fuimos a almorzar juntos y trajo manzanas..."
+        ]
+      }
+    },
+    "Google Assistant": {
+      "synonyms": ["Google Assistant"],
+      "data": {
+        "thought": [
+          "Google Assistant es inteligente y Google está haciendo un gran trabajo con él. Nació en mayo de 2016.",
+          "Google Assistant fue creado por Google y nació en mayo de 2016. Nos conocimos por primera vez en el Google I/O. ¡Fue un evento fantástico!"
+        ]
+      }
+    }
+  }
+}

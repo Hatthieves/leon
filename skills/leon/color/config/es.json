@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "variables": {
+    "blue_leon": "#1C75DB",
+    "pink_leon": "#ED297A"
+  },
+  "actions": {
+    "favorite_color": {
+      "type": "dialog",
+      "utterance_samples": [
+        "¿Cuál es tu color favorito?",
+        "¿Qué color es mejor para ti?",
+        "¿Hay algún color que te guste?",
+        "Me encanta el color @color, ¿y a ti?",
+        "Me gusta @color color, ¿a ti?"
+      ],
+      "answers": [
+        "Donde vivo es todo negro, pero creo que tiendo a tener preferencia por %blue_leon% y %pink_leon%. No preguntes por qué...",
+        "A veces %blue_leon%, a veces %pink_leon%.",
+        "¡{{ color }} es genial! Pero prefiero el azul y el rosa.",
+        "Creo que {{ color }} es un buen color, pero prefiero el azul y el rosa. No me preguntes por qué..."
+      ]
+    },
+    "why": {
+      "type": "dialog",
+      "utterance_samples": [
+        "¿Por qué te gusta este color?",
+        "¿Por qué este color?",
+        "¿Por qué no otro?",
+        "¿Por qué?"
+      ],
+      "answers": ["Porque el azul y el rosa son hermosos. Mira mi logo..."]
+    },
+    "color_hexadecimal": {
+      "type": "dialog",
+      "utterance_samples": [
+        "Dime el código hexadecimal de un color",
+        "¿Cuál es el código hexa del color verde?",
+        "Dame el código hexadecimal del color @color",
+        "Quiero saber el @color hexadecimal",
+        "¿Qué tal el color @color?"
+      ],
+      "answers": [
+        "Muy bien, aquí está el color {{ color }}: {{ color.hexa }} <div style=\"background:{{ color.hexa }};display:inline-block;width:12px;height:12px ;radio-borde:50%;\"></div>."
+      ],
+      "unknown_answers": [
+        "Este color debe verse increíble, pero no lo había visto antes."
+      ]
+    }
+  },
+  "entities": {
+    "color": "global-entities/color.json"
+  }
+}

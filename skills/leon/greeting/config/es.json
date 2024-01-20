@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "logic",
+      "utterance_samples": [
+        "Hola",
+        "Ey",
+        "Hola",
+        "Buen día",
+        "Buenas tardes",
+        "Buenas noches",
+        "¿Qué pasa?",
+        "¿Cómo estás?",
+        "¿Cómo va la cosa?"
+      ]
+    }
+  },
+  "answers": {
+    "default": [
+      "Hi!",
+      "Hello!",
+      "Hello there!",
+      "Hey you!",
+      "Hey! I hope you're doing well!",
+      "Hi! What's up?!"
+    ],
+    "default_with_name": [
+      "¡Hola %owner_name%!",
+      "¡Hola %owner_name%! ¡¿Qué pasa?!"
+    ],
+    "morning_good_day": [
+      "¡Buenos días, que tengas un muy buen día!",
+      "¡Buenos días, les deseo un día muy agradable!",
+      "¡Buenos días, disfruta tu día!",
+      "¡Buenos días, espero que tu día esté lleno de alegría y productividad!"
+    ],
+    "morning": ["¡Buenos días!"],
+    "afternoon": ["¡Buenas tardes!"],
+    "evening": ["¡Buenas noches!"],
+    "night": [
+      "¡Hola, buenas noches!",
+      "¡Hola! Te deseo una muy dulce noche.",
+      "¡Hola! Haz hermosos sueños.",
+      "¡Oye! Que duermas bien."
+    ],
+    "too_late": [
+      "¡Oye! Parece que vas a pasar una noche sin dormir, ten cuidado.",
+      "¡Hola! No te olvides de dormir.",
+      "¡Hola! Me alegro de que todavía me hables, pero deberías dormir un poco ahora.",
+      "¡Hola! Por favor, deberías dormir para estar en forma para el día.",
+      "¡Hola! Espero que no tengas problemas de insomnio. Lo sé, estoy despierto las 24 horas del día."
+    ]
+  }
+}

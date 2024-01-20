@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "logic",
+      "utterance_samples": [
+        "¿Cuáles son las tendencias en Product Hunt?",
+        "Dame las tendencias de Product Hunt",
+        "¿Cuáles son las tendencias en Product Hunt?",
+        "¿Cuáles son las tendencias en PH?",
+        "Dame las tendencias de PH",
+        "¿Cuáles son las tendencias en PH?",
+        "¿Cuáles son las tendencias en ProductHunt?"
+      ]
+    }
+  },
+  "answers": {
+    "limit_max": [
+      "Ha solicitado demasiadas tendencias de búsqueda de productos; en su lugar, le daré tendencias %new_limit%.",
+      "Las tendencias de %limit% Product Hunt son muchas, déjame contarte las tendencias de %new_limit%."
+    ],
+    "reaching": [
+      "Estoy comunicándome con Product Hunt, espere un segundo...",
+      "Déjame comunicarme con Product Hunt..."
+    ],
+    "today": [
+      "Aquí están las %limit% tendencias de búsqueda de productos del día:<br><br><ul>%result%</ul>"
+    ],
+    "unreachable": [
+      "No se puede acceder a Product Hunt por el momento. Vuelva a intentarlo más tarde.",
+      "Tengo dificultades para comunicarme con Product Hunt. Vuelva a intentarlo más tarde.",
+      "La búsqueda de productos parece no funcionar; inténtelo de nuevo más tarde."
+    ],
+    "list_element": [
+      "<li>#%rank%. <a href=\"%post_url%\" target=\"_blank\">%product_name%</a> con %votes_nb% votos.</li>"
+    ],
+    "not_found": [
+      "No hay ningún producto en esa fecha.",
+      "No encontré ningún producto en esa fecha."
+    ],
+    "invalid_developer_token": [
+      "Su token de desarrollador de Product Hunt no es válido. Proporcione uno válido antes de <a href=\"https://github.com/leon-ai/leon/tree/develop/skills/news/product_hunt_trends\" target=\" _blank\">leyendo esto</a>."
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "dialog",
+      "utterance_samples": [
+        "¿Cuál es el significado de la vida?",
+        "Dime cuál es el sentido de la vida"
+      ],
+      "answers": ["42.", "1 0 1 0 1 0."]
+    }
+  }
+}

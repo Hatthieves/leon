@@ -19,6 +19,9 @@ const VOICES = {
   },
   'fr-FR': {
     VoiceId: 'Mathieu'
+  },
+  'es-ES': {
+    VoiceId: 'Pedro'
   }
 }
 

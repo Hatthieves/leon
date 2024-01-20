@@ -1,0 +1,64 @@
+{
+  "$schema": "../../../../schemas/skill-schemas/skill-config.json",
+  "actions": {
+    "run": {
+      "type": "logic",
+      "utterance_samples": [
+        "¿Cuáles son las tendencias en GitHub?",
+        "Dame las tendencias de GitHub",
+        "¿Cuáles son las tendencias en GitHub?",
+        "¿Cuáles son las tendencias sobre GH?",
+        "Dame las tendencias de GH",
+        "¿Cuáles son las tendencias en GH?"
+      ],
+      "http_api": {
+        "entities": [
+          {
+            "entity": "number",
+            "resolution": ["value"]
+          },
+          {
+            "entity": "daterange",
+            "resolution": ["timex"]
+          }
+        ]
+      }
+    }
+  },
+  "answers": {
+    "limit_max": [
+      "Has pedido demasiadas tendencias de GitHub, en su lugar te daré 25 tendencias.",
+      "%limit% tendencias de GitHub son muchas, déjame contarte las 25 tendencias."
+    ],
+    "reaching": [
+      "Me estoy comunicando con GitHub, espere un segundo...",
+      "Déjame llegar a GitHub..."
+    ],
+    "today": [
+      "Aquí están las %limit% tendencias de GitHub del día:<br><br><ul>%result%</ul>"
+    ],
+    "week": [
+      "Aquí están las %limit% tendencias de GitHub de la semana:<br><br><ul>%result%</ul>"
+    ],
+    "month": [
+      "Aquí están las %limit% tendencias de GitHub del mes:<br><br><ul>%result%</ul>"
+    ],
+    "today_with_tech": [
+      "Aquí están las %limit% tendencias de GitHub del día para la tecnología %tech%:<br><br><ul>%result%</ul>"
+    ],
+    "week_with_tech": [
+      "Aquí están las tendencias de %limit% GitHub de la semana para la tecnología %tech%:<br><br><ul>%result%</ul>"
+    ],
+    "month_with_tech": [
+      "Aquí están las tendencias de %limit% GitHub del mes para la tecnología %tech%:<br><br><ul>%result%</ul>"
+    ],
+    "unreachable": [
+      "No se puede acceder a GitHub por el momento. Vuelva a intentarlo más tarde.",
+      "Tengo dificultades para comunicarme con GitHub. Vuelva a intentarlo más tarde.",
+      "Parece que GitHub no funciona. Vuelve a intentarlo más tarde."
+    ],
+    "list_element": [
+      "<li>#%rank%. <a href=\"%repository_url%\" target=\"_blank\">%repository_name%</a> creado por <a href=\"%author_url%\" target= \"_blank\">%author_username%</a> con %stars_nb% nuevas estrellas.</li>"
+    ]
+  }
+}

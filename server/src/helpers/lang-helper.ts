@@ -4,7 +4,7 @@ import type { LongLanguageCode, ShortLanguageCode } from '@/types'
 export class LangHelper {
   /**
    * Get short language codes
-   * @example getShortCodes() // ["en", "fr"]
+   * @example getShortCodes() // ["en", "fr", "es"]
    */
   public static getShortCodes(): ShortLanguageCode[] {
     const longLanguages = Object.keys(langs) as LongLanguageCode[]
@@ -23,6 +23,7 @@ export class LangHelper {
       const lang = langs[longLanguageType]
 
       if (lang.short === shortCode) {
+        console.log('ssssssssssssssssssssssssssssssssssss')
         return longLanguageType
       }
     }
